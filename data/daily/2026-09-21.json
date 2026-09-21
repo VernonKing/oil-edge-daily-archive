@@ -1,0 +1,884 @@
+{
+  "date": "2026-09-21",
+  "fetchedAt": "2026-09-21T02:34:40.665Z",
+  "observations": [
+    {
+      "metric": "espoPremium",
+      "date": "2026-01-27",
+      "value": -11.65,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-03 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-02-16",
+      "value": -13.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-04 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-02-23",
+      "value": -13.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-04 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-03-05",
+      "value": -5.2,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-05 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-03-09",
+      "value": 2.75,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-05 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-03-11",
+      "value": 0.15,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-05 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-03-19",
+      "value": 5.5,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-05 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-04-07",
+      "value": 1.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-06 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-04-16",
+      "value": -0.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-06 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-04-23",
+      "value": 3.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-06 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-05-04",
+      "value": 3.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-07 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-05-11",
+      "value": 1.75,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-07 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-06-05",
+      "value": -2,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-08 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-06-19",
+      "value": -2,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-08 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-07-06",
+      "value": -7.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-09 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-07-20",
+      "value": -4.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-09 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-07-30",
+      "value": -1.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-09 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-07-31",
+      "value": -0.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-09 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-05",
+      "value": -1.7,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-06",
+      "value": -0.8,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-12",
+      "value": -0.75,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-17",
+      "value": -0.9,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-18",
+      "value": -0.65,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-19",
+      "value": -0.5,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-20",
+      "value": 0.95,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-21",
+      "value": 0.95,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-24",
+      "value": -0.8,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-25",
+      "value": -0.5,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-26",
+      "value": 1.4,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-27",
+      "value": 0.7,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-28",
+      "value": -0.25,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-08-31",
+      "value": -0.8,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-10 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-01",
+      "value": 1.65,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-01",
+      "value": 18.44,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 135.14,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-01",
+      "value": 2.88,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.25,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-02",
+      "value": 1.9,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-02",
+      "value": 18.72,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 137.21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-02",
+      "value": 2.88,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.25,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-03",
+      "value": 6.45,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-03",
+      "value": 19,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 139.29,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-03",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-04",
+      "value": 6.2,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-04",
+      "value": 19.57,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 143.45,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-04",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-07",
+      "value": 7.25,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-07",
+      "value": 19.71,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 144.49,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-07",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-08",
+      "value": 7.55,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-08",
+      "value": 20,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 146.57,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-08",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-09",
+      "value": 11.3,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-09",
+      "value": 21.27,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 155.93,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-09",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-10",
+      "value": 10.25,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-10",
+      "value": 22.12,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 162.16,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-10",
+      "value": 2.84,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-11",
+      "value": 14.55,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-11",
+      "value": 23.54,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 172.56,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-11",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-14",
+      "value": 15.75,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-14",
+      "value": 27.09,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 198.54,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-14",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-15",
+      "value": 17.75,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-15",
+      "value": 28.5,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 208.94,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-15",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-16",
+      "value": 19.8,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-16",
+      "value": 31.34,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 229.73,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-16",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-17",
+      "value": 21,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-17",
+      "value": 32.33,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 237.01,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-17",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-09-18",
+      "value": 20.35,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChina",
+      "date": "2026-09-18",
+      "value": 30.93,
+      "unit": "USD/bbl",
+      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
+      "sourceName": "Shanghai Shipping Exchange",
+      "rawValue": 226.74,
+      "rawUnit": "USD/t"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-09-18",
+      "value": 32.48,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 238.05,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-09-18",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
+    }
+  ],
+  "errors": [
+    {
+      "source": "ESPO FOB",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "ICE Brent futures reference",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "NYMEX WTI futures reference",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "Asia margin",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "IEA 2026-09",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-08",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-07",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-06",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-05",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-04",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-03",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-02",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-01",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-12",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-11",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-10",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-09",
+      "message": "HTTP 403"
+    }
+  ]
+}
