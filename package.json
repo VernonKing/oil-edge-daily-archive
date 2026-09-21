@@ -1,0 +1,10 @@
+{
+  "name": "oil-marginal-monitor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-worker.mjs",
+    "test": "node --test --test-isolation=none tests/engine.test.mjs tests/market-data.test.mjs tests/physical-data.test.mjs tests/observation-data.test.mjs tests/research-data.test.mjs tests/research-store.test.mjs tests/worker.test.mjs tests/chart-data.test.mjs",
+    "check": "node --check dist/engine.js && node --check dist/market-data.js && node --check dist/physical-data.js && node --check dist/observation-data.js && node --check dist/chart-data.js && node --check dist/research-data.js && node --check dist/research-store.js && node --check dist/app.js && node --check dist/server/index.js"
+  }
+}
