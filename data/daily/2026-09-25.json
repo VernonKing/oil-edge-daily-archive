@@ -1,5 +1,6 @@
 {
-  "updatedAt": "2026-09-25T00:36:41.308Z",
+  "date": "2026-09-25",
+  "fetchedAt": "2026-09-25T00:36:41.308Z",
   "observations": [
     {
       "metric": "espoPremium",
@@ -774,18 +775,6 @@
       "sourceName": "CommodityScope"
     },
     {
-      "metric": "freightChina",
-      "date": "2026-09-18",
-      "value": 30.93,
-      "unit": "USD/bbl",
-      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
-      "sourceName": "Shanghai Shipping Exchange",
-      "rawValue": 226.74,
-      "rawUnit": "USD/t"
-    },
-    {
       "metric": "freightChinaAlt",
       "date": "2026-09-18",
       "value": 32.48,
@@ -818,18 +807,6 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
-    },
-    {
-      "metric": "freightChina",
-      "date": "2026-09-21",
-      "value": 31.63,
-      "unit": "USD/bbl",
-      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
-      "sourceName": "Shanghai Shipping Exchange",
-      "rawValue": 231.86,
-      "rawUnit": "USD/t"
     },
     {
       "metric": "freightChinaAlt",
@@ -866,18 +843,6 @@
       "sourceName": "CommodityScope"
     },
     {
-      "metric": "freightChina",
-      "date": "2026-09-22",
-      "value": 31.92,
-      "unit": "USD/bbl",
-      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
-      "sourceName": "Shanghai Shipping Exchange",
-      "rawValue": 233.98,
-      "rawUnit": "USD/t"
-    },
-    {
       "metric": "freightChinaAlt",
       "date": "2026-09-22",
       "value": 32.48,
@@ -910,18 +875,6 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
-    },
-    {
-      "metric": "freightChina",
-      "date": "2026-09-23",
-      "value": 30.68,
-      "unit": "USD/bbl",
-      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
-      "sourceName": "Shanghai Shipping Exchange",
-      "rawValue": 224.85,
-      "rawUnit": "USD/t"
     },
     {
       "metric": "freightChinaAlt",
@@ -958,6 +911,76 @@
       "sourceName": "Shanghai Shipping Exchange",
       "rawValue": 224.18,
       "rawUnit": "USD/t"
+    }
+  ],
+  "errors": [
+    {
+      "source": "ESPO FOB",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "ICE Brent futures reference",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "NYMEX WTI futures reference",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "Asia margin",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "IEA 2026-09",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-08",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-07",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-06",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-05",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-04",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-03",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-02",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2026-01",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-12",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-11",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-10",
+      "message": "HTTP 403"
+    },
+    {
+      "source": "IEA 2025-09",
+      "message": "HTTP 403"
     }
   ]
 }
