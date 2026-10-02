@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '15 8 * * *'
       timezone: Asia/Shanghai
+    - cron: '15 20 * * *'
+      timezone: Asia/Shanghai
   workflow_dispatch:
 
 permissions:
@@ -30,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily data/history.json
+          git add data/daily data/history.json data/news
           if ! git diff --cached --quiet; then
             git commit -m "Archive oil observations for $(TZ=Asia/Shanghai date +%F)"
             git push
