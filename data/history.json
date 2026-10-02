@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-10-02T01:55:13.521Z",
+  "updatedAt": "2026-10-02T03:08:59.445Z",
   "observations": [
+    {
+      "metric": "globalOilStockChange",
+      "date": "2025-09-30",
+      "value": 2.59,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-november-2025",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 77.7
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2025-10-31",
+      "value": 1.35,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-december-2025",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 42
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2025-11-30",
+      "value": 2.51,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-january-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 75.3
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2025-12-31",
+      "value": 1.19,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-february-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 37
+    },
     {
       "metric": "espoPremium",
       "date": "2026-01-27",
@@ -10,6 +54,18 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2026-01-31",
+      "value": 1.58,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-february-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 49,
+      "preliminary": true
     },
     {
       "metric": "espoPremium",
@@ -72,6 +128,17 @@
       "sourceName": "CommodityScope"
     },
     {
+      "metric": "globalOilStockChange",
+      "date": "2026-03-31",
+      "value": -4.16,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-may-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": -129
+    },
+    {
       "metric": "espoPremium",
       "date": "2026-04-07",
       "value": 1.3,
@@ -102,6 +169,17 @@
       "sourceName": "CommodityScope"
     },
     {
+      "metric": "globalOilStockChange",
+      "date": "2026-04-30",
+      "value": -3.9,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-may-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": -117
+    },
+    {
       "metric": "espoPremium",
       "date": "2026-05-04",
       "value": 3.1,
@@ -122,6 +200,17 @@
       "sourceName": "CommodityScope"
     },
     {
+      "metric": "globalOilStockChange",
+      "date": "2026-05-31",
+      "value": -4.61,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-june-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": -143
+    },
+    {
       "metric": "espoPremium",
       "date": "2026-06-05",
       "value": -2,
@@ -140,6 +229,17 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2026-06-30",
+      "value": 0.7,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-july-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": 21
     },
     {
       "metric": "espoPremium",
@@ -180,6 +280,17 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2026-07-31",
+      "value": -2.23,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-august-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": -69
     },
     {
       "metric": "espoPremium",
@@ -320,6 +431,17 @@
       "quality": "observed",
       "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
       "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "globalOilStockChange",
+      "date": "2026-08-31",
+      "value": -3.06,
+      "unit": "million bbl/day",
+      "basis": "IEA global observed oil inventories; monthly change ÷ calendar days; includes crude, products and oil on water",
+      "quality": "observed",
+      "sourceUrl": "https://www.iea.org/reports/oil-market-report-september-2026",
+      "sourceName": "IEA Oil Market Report",
+      "monthlyChangeMb": -95
     },
     {
       "metric": "espoPremium",
