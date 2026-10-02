@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>原油供需边际监测台 · 公开数据</title>
+  <style>
+    :root{font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;color:#18304d;background:#f5f8fc;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}a{color:#1262b1;text-decoration:none}a:hover{text-decoration:underline}
+    .mast{background:#0d3159;color:white;border-bottom:5px solid #3c91d0}.mast-inner{max-width:1200px;margin:auto;padding:32px 28px 29px}
+    .eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;color:#a7d2f4;font-weight:800}.mast h1{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(27px,4vw,43px);margin:10px 0 7px;letter-spacing:.02em}.mast p{margin:0;color:#c2d8ea;line-height:1.6}
+    main{max-width:1200px;margin:auto;padding:25px 28px 65px}.strip{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid #cfdfed;background:#fff;padding:14px 17px;margin-bottom:22px;box-shadow:0 2px 8px #153b6120}
+    .strip strong{font-size:14px}.strip span{color:#506780;font-size:13px}.strip button{border:1px solid #b5cce2;background:#ecf5fd;color:#0b4f88;padding:8px 14px;border-radius:4px;font-weight:700;cursor:pointer}.strip button:hover{background:#d9ebfb}
+    .section-title{display:flex;align-items:baseline;gap:12px;margin:30px 0 14px}.section-title h2{margin:0;font-size:20px;color:#103a64}.section-title small{color:#6c8094}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:white;border:1px solid #d4e0eb;border-top:4px solid #2575b9;padding:19px;min-width:0;box-shadow:0 4px 14px #183e5d0c}.card.alt{border-top-color:#6c8cae}.card h3{font-size:14px;margin:0 0 12px;color:#45617d}.value{font-family:Georgia,"Noto Serif SC",serif;font-size:34px;font-weight:700;letter-spacing:-.04em;color:#0d3159}.unit{font-size:13px;color:#678099;margin-left:7px;white-space:nowrap}.delta{margin-top:8px;min-height:23px;font-size:13px;font-weight:700}.delta.up{color:#bd433d}.delta.down{color:#197b70}.delta.muted{color:#788ca0}.date{font-size:12px;color:#688099;margin-top:7px}.basis{font-size:12px;line-height:1.6;border-top:1px solid #e4edf5;margin:15px 0 0;padding-top:11px;color:#506984;min-height:70px}.tag{display:inline-block;border:1px solid #cbdbea;border-radius:3px;background:#f1f7fc;color:#3b6389;padding:2px 5px;margin-right:6px;font-size:11px}.tag.warn{border-color:#e8c6a2;background:#fff4e7;color:#955420}
+    .notice{background:#fff;border-left:4px solid #cc4b43;padding:14px 17px;line-height:1.6;box-shadow:0 2px 9px #153b6111}.notice.muted{border-left-color:#95aabe;color:#556d84}.notice strong{display:block;color:#a13831;margin-bottom:3px}.notice.muted strong{color:#375a7b}.notice small{display:block;color:#637b90;margin-top:5px}
+    .chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.chart-card{background:white;border:1px solid #d4e0eb;padding:19px;min-width:0}.chart-card h3{margin:0;font-size:16px;color:#174c80}.chart-card p{font-size:12px;color:#72869a;line-height:1.5;margin:5px 0 14px}.chart-card svg{width:100%;height:auto;display:block;overflow:visible}.chart-meta{display:flex;gap:15px;flex-wrap:wrap;font-size:12px;color:#56718a;margin-top:12px}.chart-meta b{color:#18476e}
+    .details{background:#fff;border:1px solid #d4e0eb;padding:18px;line-height:1.7;font-size:13px;color:#536b82}.details h3{color:#123f6a;margin:0 0 7px}.details ul{margin:7px 0;padding-left:20px}.details li{margin:6px 0}.details a{overflow-wrap:anywhere}
+    footer{margin-top:32px;font-size:12px;color:#788ba0;line-height:1.7}.error{color:#ad382f;font-weight:700}.skeleton{color:#8299af}
+    @media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){main{padding:19px 16px 50px}.mast-inner{padding:27px 16px}.cards,.chart-grid{grid-template-columns:1fr}.section-title{display:block}.section-title small{display:block;margin-top:5px}.value{font-size:31px}}
+  </style>
+</head>
+<body>
+  <header class="mast"><div class="mast-inner"><div class="eyebrow">OIL EDGE / PUBLIC DATA ARCHIVE</div><h1>原油供需边际监测台</h1><p>公开数据只读版 · 关键盘口优先 · 保留真实观测日期与口径</p></div></header>
+  <main>
+    <div class="strip"><div><strong id="archive-status">正在读取 GitHub 每日留档…</strong><br><span id="archive-time">定时采集由 GitHub Actions 在云端执行，打开网页不是更新条件。</span></div><button id="reload" type="button">重新读取</button></div>
+    <div class="section-title"><h2>关键盘口</h2><small>最新值及相邻同口径有效观测环比</small></div>
+    <div id="cards" class="cards" aria-live="polite"></div>
+    <div class="section-title"><h2>当前公开数据警报</h2><small>只用仍在有效期内的来源观测</small></div>
+    <div id="alerts" class="notice muted">正在判断…</div>
+    <div class="section-title"><h2>2026 年初至今</h2><small>历史最高与最低均按当前同口径序列标注</small></div>
+    <div id="charts" class="chart-grid"></div>
+    <div class="section-title"><h2>数据说明</h2></div>
+    <div class="details"><h3>如何看这张表</h3><ul>
+      <li>GitHub Actions 每天北京时间 08:15 尝试采集并写入 <a href="./data/history.json">历史数据</a>。采集时间只说明任务运行过，不代表报价在当天更新。</li>
+      <li>ESPO 为 FOB 科兹米诺相对 Dubai swap M2 的升贴水。装船月切换时图线断开，也不跨装船月计算环比。</li>
+      <li>CT1 是 Ras Tanura—宁波 VLCC 270kt；阿湾—中国是替代航线，两条序列单独展示，不拼接。运费均按约 7.33 桶/吨换算且不含保险，属于代理值。</li>
+      <li>科兹米诺—华北运费保留在 <a href="./data/history.json">底层留档</a>，仅供 ESPO 采购后裂解差计算，不作为主要运输压力盘口。</li>
+      <li>Brent、WTI、全球可观测库存及 ESPO 采购后裂解差目前未进入这份 GitHub 自动留档。本页不显示伪造的实时值；完整监测和私人录入仍在原私人网页。</li>
+    </ul></div>
+    <footer>公开只读看板 · 数据来自原始公开来源，具体报价与统计口径以来源页面为准。<br><a href="https://github.com/VernonKing/oil-edge-daily-archive">查看 GitHub 仓库与每日文件</a></footer>
+  </main>
+  <script>
+    const specs=[
+      {key:'espoPremium',name:'ESPO 现货升贴水',source:'CommodityScope',tone:'main'},
+      {key:'freightChina',name:'中东—宁波 CT1 运费',source:'上海航运交易所',tone:'main'},
+      {key:'freightChinaAlt',name:'阿湾—中国替代运费',source:'CommodityScope',tone:'alt'}
+    ];
+    const $=id=>document.getElementById(id);
+    const clean=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeUrl=u=>/^https:\/\//.test(u??'')?u:'#';
+    const fmt=(n,d=2)=>Number(n).toLocaleString('zh-CN',{minimumFractionDigits:d,maximumFractionDigits:d});
+    const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+    const daysAgo=d=>Math.floor((Date.parse(today()+'T00:00:00Z')-Date.parse(d+'T00:00:00Z'))/86400000);
+    const loadingMonth=b=>String(b??'').match(/\d{4}-\d{2} loading/)?.[0]??'';
+    const series=(all,key)=>all.filter(x=>x.metric===key&&x.date>='2026-01-01'&&x.date<=today()&&Number.isFinite(x.value)).sort((a,b)=>a.date.localeCompare(b.date));
+    const latest=s=>s.at(-1);
+    function adjacent(s,key){if(s.length<2)return null;const end=s.at(-1);for(let i=s.length-2;i>=0;i--){const p=s[i];if(key==='espoPremium'&&loadingMonth(p.basis)!==loadingMonth(end.basis))return null;if(p.date!==end.date&&p.basis===end.basis)return end.value-p.value;}return null;}
+    function card(spec,s){const p=latest(s);if(!p)return `<article class="card ${spec.tone==='alt'?'alt':''}"><h3>${spec.name}</h3><div class="value skeleton">暂无数据</div><p class="basis">GitHub 留档中尚无该指标的有效观测。</p></article>`;
+      const d=adjacent(s,spec.key),age=daysAgo(p.date),stale=age>4;
+      const delta=d===null?'同口径相邻观测不足':`较上一有效观测 ${d>=0?'+':''}${fmt(d)} ${p.unit}`;
+      const deltaClass=d===null?'muted':d>0?'up':d<0?'down':'muted';
+      return `<article class="card ${spec.tone==='alt'?'alt':''}"><h3>${spec.name}</h3><div><span class="value">${fmt(p.value)}</span><span class="unit">${clean(p.unit)}</span></div><div class="delta ${deltaClass}">${clean(delta)}</div><div class="date">来源观测：${clean(p.date)} · ${clean(spec.source)} ${stale?'<span class="tag warn">已滞后</span>':''}</div><p class="basis"><span class="tag">${p.quality==='proxy'?'代理':'公开观测'}</span>${clean(p.basis)} · <a href="${clean(safeUrl(p.sourceUrl))}" target="_blank" rel="noreferrer">来源</a></p></article>`;
+    }
+    function chart(spec,s){if(!s.length)return `<article class="chart-card"><h3>${spec.name}</h3><p>暂无历史观测</p></article>`;
+      const W=500,H=192,L=43,R=17,T=28,B=30;
+      const low=Math.min(...s.map(p=>p.value)),high=Math.max(...s.map(p=>p.value)),pad=Math.max((high-low)*.15,1),min=low-pad,max=high+pad;
+      const start=Date.parse('2026-01-01'),end=Math.max(Date.parse(today()),start+1);
+      const xy=p=>[L+(Date.parse(p.date)-start)/(end-start)*(W-L-R),T+(max-p.value)/(max-min)*(H-T-B)];
+      const peak=s.find(p=>p.value===high),trough=s.find(p=>p.value===low);
+      let paths=[],group=[];for(const p of s){if(group.length&&spec.key==='espoPremium'&&loadingMonth(group.at(-1).basis)!==loadingMonth(p.basis)){paths.push(group);group=[];}group.push(p);}if(group.length)paths.push(group);
+      const lines=paths.map(g=>g.length===1?`<circle cx="${xy(g[0])[0].toFixed(1)}" cy="${xy(g[0])[1].toFixed(1)}" r="3.5" fill="#2376b9"/>`:`<polyline fill="none" stroke="${spec.tone==='alt'?'#6a8bab':'#247bbd'}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" points="${g.map(p=>xy(p).map(n=>n.toFixed(1)).join(',')).join(' ')}"/>`).join('');
+      const point=(p,label,dy)=>{const [x,y]=xy(p);return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="${label==='高'?'#c25448':'#238075'}" stroke="white" stroke-width="1.5"/><text x="${Math.min(Math.max(x,L+28),W-R-30).toFixed(1)}" y="${Math.max(12,Math.min(H-B-3,y+dy)).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="${label==='高'?'#a43f36':'#177165'}">${label} ${fmt(p.value,1)}</text>`};
+      return `<article class="chart-card"><h3>${spec.name}</h3><p>${spec.key==='espoPremium'?'装船月切换处断线':'独立航线 · 不与其他运费序列拼接'}</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${spec.name} 2026 年趋势，最高 ${fmt(high,1)}，最低 ${fmt(low,1)}"><line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="#b6c8d9"/><line x1="${L}" y1="${T}" x2="${L}" y2="${H-B}" stroke="#d5e1eb"/><text x="${L}" y="${H-8}" font-size="11" fill="#738aa0">2026-01</text><text x="${W-R}" y="${H-8}" font-size="11" fill="#738aa0" text-anchor="end">${clean(today().slice(0,7))}</text>${lines}${point(peak,'高',-10)}${peak!==trough?point(trough,'低',17):''}</svg><div class="chart-meta"><span>最高 <b>${fmt(high)}</b> · ${clean(peak.date)}</span><span>最低 <b>${fmt(low)}</b> · ${clean(trough.date)}</span><span>${s.length} 条观测</span></div></article>`;
+    }
+    function alerts(all){const espo=latest(series(all,'espoPremium')),ct1=latest(series(all,'freightChina')),alt=latest(series(all,'freightChinaAlt'));const rows=[];
+      if(espo&&daysAgo(espo.date)<=4&&espo.quality==='observed'&&espo.value>=25)rows.push(`ESPO 升贴水 ${fmt(espo.value)} 美元/桶，超过 25 美元/桶参考线。来源日期 ${espo.date}。`);
+      const freight=ct1&&daysAgo(ct1.date)<=4?ct1:alt;
+      if(freight&&daysAgo(freight.date)<=4&&freight.quality==='proxy'&&freight.value*.9>=15)rows.push(`${freight.metric==='freightChina'?'CT1 中东—宁波':'阿湾—中国替代航线'}代理运费 ${fmt(freight.value)} 美元/桶；扣除 10% 换算误差后仍高于 15 美元/桶参考线。来源日期 ${freight.date}，不含保险。`);
+      $('alerts').className=rows.length?'notice':'notice muted';$('alerts').innerHTML=rows.length?`<strong>${rows.length} 项红色警报</strong>${rows.map(x=>`<div>${clean(x)}</div>`).join('')}<small>仅使用相应来源日期仍在 4 天有效期内的观测；两条航线不拼接。</small>`:'<strong>当前公开留档未触发有效期内警报</strong>过期的报价不会继续触发“当前”警报。';
+    }
+    async function load(){ $('archive-status').textContent='正在读取 GitHub 每日留档…';try{const r=await fetch('./data/history.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();if(!Array.isArray(data.observations))throw new Error('数据结构不完整');const all=data.observations;
+      $('archive-status').textContent=`GitHub 留档已读取 · ${all.length} 条观测`;
+      $('archive-time').textContent=`最近留档时间：${new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'medium',timeStyle:'short'}).format(new Date(data.updatedAt))}（北京时间） · 来源日期见每张卡片`;
+      $('cards').innerHTML=specs.map(s=>card(s,series(all,s.key))).join('');$('charts').innerHTML=specs.map(s=>chart(s,series(all,s.key))).join('');alerts(all);
+    }catch(e){$('archive-status').textContent='留档读取失败';$('archive-time').innerHTML=`<span class="error">${clean(e.message)}。请稍后重试，或查看 GitHub 原始文件。</span>`;$('cards').innerHTML='';$('charts').innerHTML='';$('alerts').className='notice muted';$('alerts').textContent='无法判断当前警报：公开留档未读取成功。';}}
+    $('reload').addEventListener('click',load);load();
+  </script>
+</body>
+</html>
