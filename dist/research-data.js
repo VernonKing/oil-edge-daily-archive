@@ -76,7 +76,7 @@ export function parseEspoHistoryPage(html) {
 
 export function parseEspoFobPage(html) {
   const text=plain(html);
-  const start=text.indexOf('ESPO Crude Oil Price Today');
+  const start=text.lastIndexOf('ESPO Crude Oil Price Today');
   if(start<0) return null;
   const section=text.slice(start,start+1200);
   const assessment=section.match(/(\d{1,2})\s+([A-Z][a-z]{2})\s+(20\d{2})\s*·\s*Singapore[^·]*·\s*(20\d{2}-\d{2})\s+loading/);
@@ -115,7 +115,7 @@ export function parseFuturesBenchmarkPage(html, metric) {
     wtiNymex:{heading:'WTI Crude Oil Price Today',basis:'NYMEX WTI'}}[metric];
   if(!config) return null;
   const text=plain(html);
-  const start=text.indexOf(config.heading);
+  const start=text.lastIndexOf(config.heading);
   if(start<0) return null;
   const section=text.slice(start,start+700);
   const dated=section.match(/(\d{1,2})\s+([A-Z][a-z]{2})\s+(20\d{2})\s*·\s*([A-Z][a-z]{2})\s+(20\d{2})\s+contract/);
