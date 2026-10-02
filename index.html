@@ -41,7 +41,7 @@
       <li>CT1 是 Ras Tanura—宁波 VLCC 270kt；阿湾—中国是替代航线，两条序列单独展示，不拼接。运费均按约 7.33 桶/吨换算且不含保险，属于代理值。</li>
       <li>科兹米诺—华北运费保留在 <a href="./data/history.json">底层留档</a>，仅供 ESPO 采购后裂解差计算，不作为主要运输压力盘口。</li>
       <li>Brent ICE 与 WTI NYMEX 是可抓取的期货结算价代理，不是 EIA 现货。ESPO 采购后裂解差是估算值，尚未扣加工成本、税费和产品物流。</li>
-      <li>全球可观测库存目前未进入这份 GitHub 自动留档。本页不补造缺失值；完整监测和私人录入仍在原私人网页。</li>
+      <li>全球可观测石油库存来自 IEA 月报，包含原油、成品油及海上油；月度变化除以当月天数，单位为百万桶/日。历史已从 D1 补入 GitHub 留档；后续月份仍以 IEA 新报告的真实发布日期和观测月份为准。</li>
     </ul></div>
     <footer>公开只读看板 · 数据来自原始公开来源，具体报价与统计口径以来源页面为准。<br><a href="https://github.com/VernonKing/oil-edge-daily-archive">查看 GitHub 仓库与每日文件</a></footer>
   </main>
@@ -52,7 +52,8 @@
       {key:'espoPremium',name:'ESPO 现货升贴水',source:'CommodityScope',tone:'main'},
       {key:'freightChina',name:'中东—宁波 CT1 运费',source:'上海航运交易所',tone:'main'},
       {key:'freightChinaAlt',name:'阿湾—中国替代运费',source:'CommodityScope',tone:'alt'},
-      {key:'asiaNetMargin',name:'ESPO 采购后裂解差',source:'同日组件估算',tone:'alt'}
+      {key:'asiaNetMargin',name:'ESPO 采购后裂解差',source:'同日组件估算',tone:'alt'},
+      {key:'globalOilStockChange',name:'全球可观测石油库存变化',source:'IEA 月报',tone:'alt',freshDays:60}
     ];
     const $=id=>document.getElementById(id);
     const clean=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -65,7 +66,7 @@
     const latest=s=>s.at(-1);
     function adjacent(s,key){if(s.length<2)return null;const end=s.at(-1);for(let i=s.length-2;i>=0;i--){const p=s[i];if(key==='espoPremium'&&loadingMonth(p.basis)!==loadingMonth(end.basis))return null;if(p.date!==end.date&&p.basis===end.basis)return end.value-p.value;}return null;}
     function card(spec,s){const p=latest(s);if(!p)return `<article class="card ${spec.tone==='alt'?'alt':''}"><h3>${spec.name}</h3><div class="value skeleton">暂无数据</div><p class="basis">GitHub 留档中尚无该指标的有效观测。</p></article>`;
-      const d=adjacent(s,spec.key),age=daysAgo(p.date),stale=age>4;
+      const d=adjacent(s,spec.key),age=daysAgo(p.date),stale=age>(spec.freshDays??4);
       const delta=d===null?'同口径相邻观测不足':`较上一有效观测 ${d>=0?'+':''}${fmt(d)} ${p.unit}`;
       const deltaClass=d===null?'muted':d>0?'up':d<0?'down':'muted';
       return `<article class="card ${spec.tone==='alt'?'alt':''}"><h3>${spec.name}</h3><div><span class="value">${fmt(p.value)}</span><span class="unit">${clean(p.unit)}</span></div><div class="delta ${deltaClass}">${clean(delta)}</div><div class="date">来源观测：${clean(p.date)} · ${clean(spec.source)} ${stale?'<span class="tag warn">已滞后</span>':''}</div><p class="basis"><span class="tag">${p.quality==='proxy'?'代理':p.quality==='estimated'?'估算':'公开观测'}</span>${clean(p.basis)} · <a href="${clean(safeUrl(p.sourceUrl))}" target="_blank" rel="noreferrer">来源</a></p></article>`;
@@ -79,14 +80,16 @@
       let paths=[],group=[];for(const p of s){if(group.length&&spec.key==='espoPremium'&&loadingMonth(group.at(-1).basis)!==loadingMonth(p.basis)){paths.push(group);group=[];}group.push(p);}if(group.length)paths.push(group);
       const lines=paths.map(g=>g.length===1?`<circle cx="${xy(g[0])[0].toFixed(1)}" cy="${xy(g[0])[1].toFixed(1)}" r="3.5" fill="#2376b9"/>`:`<polyline fill="none" stroke="${spec.tone==='alt'?'#6a8bab':'#247bbd'}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" points="${g.map(p=>xy(p).map(n=>n.toFixed(1)).join(',')).join(' ')}"/>`).join('');
       const point=(p,label,dy)=>{const [x,y]=xy(p);return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="${label==='高'?'#c25448':'#238075'}" stroke="white" stroke-width="1.5"/><text x="${Math.min(Math.max(x,L+28),W-R-30).toFixed(1)}" y="${Math.max(12,Math.min(H-B-3,y+dy)).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="${label==='高'?'#a43f36':'#177165'}">${label} ${fmt(p.value,1)}</text>`};
-      return `<article class="chart-card"><h3>${spec.name}</h3><p>${spec.key==='espoPremium'?'装船月切换处断线':'独立航线 · 不与其他运费序列拼接'}</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${spec.name} 2026 年趋势，最高 ${fmt(high,1)}，最低 ${fmt(low,1)}"><line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="#b6c8d9"/><line x1="${L}" y1="${T}" x2="${L}" y2="${H-B}" stroke="#d5e1eb"/><text x="${L}" y="${H-8}" font-size="11" fill="#738aa0">2026-01</text><text x="${W-R}" y="${H-8}" font-size="11" fill="#738aa0" text-anchor="end">${clean(today().slice(0,7))}</text>${lines}${point(peak,'高',-10)}${peak!==trough?point(trough,'低',17):''}</svg><div class="chart-meta"><span>最高 <b>${fmt(high)}</b> · ${clean(peak.date)}</span><span>最低 <b>${fmt(low)}</b> · ${clean(trough.date)}</span><span>${s.length} 条观测</span></div></article>`;
+      const note=spec.key==='espoPremium'?'装船月切换处断线':spec.key==='globalOilStockChange'?'IEA 月度总油品库存变化，正值累库、负值去库':spec.key.startsWith('freight')?'独立航线 · 不与其他运费序列拼接':'按各自来源日期展示，不补造缺失值';
+      return `<article class="chart-card"><h3>${spec.name}</h3><p>${note}</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${spec.name} 2026 年趋势，最高 ${fmt(high,1)}，最低 ${fmt(low,1)}"><line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="#b6c8d9"/><line x1="${L}" y1="${T}" x2="${L}" y2="${H-B}" stroke="#d5e1eb"/><text x="${L}" y="${H-8}" font-size="11" fill="#738aa0">2026-01</text><text x="${W-R}" y="${H-8}" font-size="11" fill="#738aa0" text-anchor="end">${clean(today().slice(0,7))}</text>${lines}${point(peak,'高',-10)}${peak!==trough?point(trough,'低',17):''}</svg><div class="chart-meta"><span>最高 <b>${fmt(high)}</b> · ${clean(peak.date)}</span><span>最低 <b>${fmt(low)}</b> · ${clean(trough.date)}</span><span>${s.length} 条观测</span></div></article>`;
     }
-    function alerts(all){const espo=latest(series(all,'espoPremium')),ct1=latest(series(all,'freightChina')),alt=latest(series(all,'freightChinaAlt')),margin=latest(series(all,'asiaNetMargin'));const rows=[];
+    function alerts(all){const espo=latest(series(all,'espoPremium')),ct1=latest(series(all,'freightChina')),alt=latest(series(all,'freightChinaAlt')),margin=latest(series(all,'asiaNetMargin')),stocks=latest(series(all,'globalOilStockChange'));const rows=[];
       if(margin&&daysAgo(margin.date)<=4&&margin.quality==='estimated'&&margin.modelVersion==='espo-procurement-crack-v2'&&(Number.isFinite(margin.errorBand)?margin.value+margin.errorBand<0:margin.value<0))rows.push(`ESPO 采购后裂解差估算值 ${fmt(margin.value)} 美元/桶，来源日期 ${margin.date}；未扣加工成本、税费和产品物流。`);
       if(espo&&daysAgo(espo.date)<=4&&espo.quality==='observed'&&espo.value>=25)rows.push(`ESPO 升贴水 ${fmt(espo.value)} 美元/桶，超过 25 美元/桶参考线。来源日期 ${espo.date}。`);
       const freight=ct1&&daysAgo(ct1.date)<=4?ct1:alt;
       if(freight&&daysAgo(freight.date)<=4&&freight.quality==='proxy'&&freight.value*.9>=15)rows.push(`${freight.metric==='freightChina'?'CT1 中东—宁波':'阿湾—中国替代航线'}代理运费 ${fmt(freight.value)} 美元/桶；扣除 10% 换算误差后仍高于 15 美元/桶参考线。来源日期 ${freight.date}，不含保险。`);
-      $('alerts').className=rows.length?'notice':'notice muted';$('alerts').innerHTML=rows.length?`<strong>${rows.length} 项红色警报</strong>${rows.map(x=>`<div>${clean(x)}</div>`).join('')}<small>仅使用相应来源日期仍在 4 天有效期内的观测；两条航线不拼接。</small>`:'<strong>当前公开留档未触发有效期内警报</strong>过期的报价不会继续触发“当前”警报。';
+      if(stocks&&daysAgo(stocks.date)<=60&&stocks.quality==='observed'&&stocks.value<=-4)rows.push(`IEA 全球可观测石油库存月度变化折算 ${fmt(stocks.value)} 百万桶/日，来源月份 ${stocks.date}；包含原油、成品油和海上油。`);
+      $('alerts').className=rows.length?'notice':'notice muted';$('alerts').innerHTML=rows.length?`<strong>${rows.length} 项红色警报</strong>${rows.map(x=>`<div>${clean(x)}</div>`).join('')}<small>价格和运费使用 4 天有效期，IEA 月度库存使用 60 天有效期；两条航线不拼接。</small>`:'<strong>当前公开留档未触发有效期内警报</strong>过期的观测不会继续触发“当前”警报。';
     }
     async function loadNews(){try{const r=await fetch('./data/news/latest.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();const items=Array.isArray(data.items)?data.items:[];$('news-status').textContent=`最近消息检查：${new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',dateStyle:'medium',timeStyle:'short'}).format(new Date(data.updatedAt))} · ${items.length} 条线索${data.errors?.length?' · '+data.errors.length+' 个来源暂不可用':''}`;$('news').innerHTML=items.length?items.slice(0,8).map(x=>`<article class="news-item"><a href="${clean(safeUrl(x.url))}" target="_blank" rel="noreferrer"><b>${clean(x.title)}</b></a><small>${clean(x.source)} · ${clean(x.recordedAt?.slice(0,10))} · ${clean(x.timeBasis)}</small></article>`).join(''):'<div class="news-item">最近没有可用的已核验消息线索。</div>';}catch(e){$('news-status').textContent='消息留档暂不可用：'+e.message;$('news').innerHTML='';}}
     async function load(){ $('archive-status').textContent='正在读取 GitHub 每日留档…';loadNews();try{const r=await fetch('./data/history.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();if(!Array.isArray(data.observations))throw new Error('数据结构不完整');const all=data.observations;
