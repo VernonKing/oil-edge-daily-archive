@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T00:37:36.709Z",
+  "updatedAt": "2026-10-03T15:06:03.712Z",
   "items": [
     {
       "title": "Petroleum Marketing Monthly",
@@ -19,6 +19,6 @@
     }
   ],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: fetch failed"
   ]
 }
