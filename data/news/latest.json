@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T03:51:23.613Z",
+  "updatedAt": "2026-10-04T18:18:22.489Z",
   "items": [
     {
       "title": "Petroleum Marketing Monthly",
@@ -8,17 +8,9 @@
       "recordedAt": "2026-10-01T05:00:00.000Z",
       "timeBasis": "EIA 发布",
       "kind": "news-lead"
-    },
-    {
-      "title": "Petroleum Supply Monthly",
-      "url": "https://www.eia.gov/petroleum/supply/monthly/",
-      "source": "EIA",
-      "recordedAt": "2026-09-30T05:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
     }
   ],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
