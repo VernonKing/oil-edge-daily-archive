@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "items": [],
+  "checks": [
+    {
+      "checkedAt": "2026-10-05T17:38:40.790Z",
+      "newItems": 1,
+      "errors": [
+        "GDELT: HTTP 429"
+      ]
+    }
+  ]
+}
