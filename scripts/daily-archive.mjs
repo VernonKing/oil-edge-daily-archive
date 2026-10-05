@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { collectResearchObservations } from '../dist/research-data.js';
 import { canonicalizeResearchObservations, mergeObservations } from '../dist/observation-data.js';
 import { collectNewsLeads, mergeNewsItems } from '../dist/news-data.js';
+import { collectPublicProxies } from '../dist/public-proxies.js';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -26,12 +27,16 @@ let prior=[];
 try { prior=JSON.parse(await readFile(historyPath,'utf8')).observations??[]; }
 catch(error) { if(error.code!=='ENOENT') throw error; }
 
-const collected=await collectResearchObservations(fetchText,{asOf:today});
+const [collected,proxies]=await Promise.all([
+  collectResearchObservations(fetchText,{asOf:today}),
+  collectPublicProxies(fetchText,{asOf:today,apiKey:process.env.EIA_API_KEY || 'DEMO_KEY'}),
+]);
 const news=await collectNewsLeads(fetchText,{now:fetchedAt});
-const observations=canonicalizeResearchObservations(collected.observations);
+const observations=canonicalizeResearchObservations([...collected.observations,...proxies.observations]);
+const errors=[...collected.errors,...proxies.errors];
 const history=canonicalizeResearchObservations(mergeObservations(prior,observations));
 await mkdir(dailyDir,{recursive:true});
-await writeFile(path.join(dailyDir,`${today}.json`),JSON.stringify({date:today,fetchedAt,observations,errors:collected.errors},null,2)+'\n');
+await writeFile(path.join(dailyDir,`${today}.json`),JSON.stringify({date:today,fetchedAt,observations,errors},null,2)+'\n');
 await writeFile(historyPath,JSON.stringify({updatedAt:fetchedAt,observations:history},null,2)+'\n');
 let earlierNews=[],priorChecks=[],priorDayItems=[];
 try { earlierNews=JSON.parse(await readFile(newsLatestPath,'utf8')).items??[]; }
@@ -46,5 +51,5 @@ const checks=[...priorChecks,{checkedAt:fetchedAt,newItems:news.items.length,err
 await mkdir(newsDir,{recursive:true});
 await writeFile(newsDailyPath,JSON.stringify({date:today,items:dayItems,checks},null,2)+'\n');
 await writeFile(newsLatestPath,JSON.stringify({updatedAt:fetchedAt,items:newsItems,errors:news.errors},null,2)+'\n');
-process.stdout.write(JSON.stringify({date:today,newObservations:observations.length,totalObservations:history.length,errors:collected.errors.length,newsItems:newsItems.length,newsErrors:news.errors.length})+'\n');
+process.stdout.write(JSON.stringify({date:today,newObservations:observations.length,totalObservations:history.length,errors:errors.length,newsItems:newsItems.length,newsErrors:news.errors.length})+'\n');
 if(!observations.length) process.exitCode=1;
