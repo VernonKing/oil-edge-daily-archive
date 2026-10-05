@@ -42,6 +42,7 @@
       <li>科兹米诺—华北运费保留在 <a href="./data/history.json">底层留档</a>，仅供 ESPO 采购后裂解差计算，不作为主要运输压力盘口。</li>
       <li>Brent ICE 与 WTI NYMEX 是可抓取的期货结算价代理，不是 EIA 现货。ESPO 采购后裂解差是估算值，尚未扣加工成本、税费和产品物流。</li>
       <li>全球可观测石油库存来自 IEA 月报，包含原油、成品油及海上油；月度变化除以当月天数，单位为百万桶/日。历史已从 D1 补入 GitHub 留档；后续月份仍以 IEA 新报告的真实发布日期和观测月份为准。</li>
+      <li>美国商业原油库存是 EIA 周度代理，仅反映美国，不能替代全球原油库存。霍尔木兹油轮通行来自 IMF PortWatch AIS 艘次，不能换算为实际油流量；两项均按真实观测日期显示，不自动触发油流或全球库存警报。</li>
     </ul></div>
     <footer>公开只读看板 · 数据来自原始公开来源，具体报价与统计口径以来源页面为准。<br><a href="https://github.com/VernonKing/oil-edge-daily-archive">查看 GitHub 仓库与每日文件</a></footer>
   </main>
@@ -53,7 +54,9 @@
       {key:'freightChina',name:'中东—宁波 CT1 运费',source:'上海航运交易所',tone:'main'},
       {key:'freightChinaAlt',name:'阿湾—中国替代运费',source:'CommodityScope',tone:'alt'},
       {key:'asiaNetMargin',name:'ESPO 采购后裂解差',source:'同日组件估算',tone:'alt'},
-      {key:'globalOilStockChange',name:'全球可观测石油库存变化',source:'IEA 月报',tone:'alt',freshDays:60}
+      {key:'globalOilStockChange',name:'全球可观测石油库存变化',source:'IEA 月报',tone:'alt',freshDays:60},
+      {key:'usCrudeStocks',name:'美国商业原油库存 · 周度代理',source:'EIA WCESTUS1',tone:'alt',freshDays:12},
+      {key:'hormuzTankers',name:'霍尔木兹油轮通行 · 艘次代理',source:'IMF PortWatch',tone:'alt',freshDays:4}
     ];
     const $=id=>document.getElementById(id);
     const clean=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -80,7 +83,7 @@
       let paths=[],group=[];for(const p of s){if(group.length&&spec.key==='espoPremium'&&loadingMonth(group.at(-1).basis)!==loadingMonth(p.basis)){paths.push(group);group=[];}group.push(p);}if(group.length)paths.push(group);
       const lines=paths.map(g=>g.length===1?`<circle cx="${xy(g[0])[0].toFixed(1)}" cy="${xy(g[0])[1].toFixed(1)}" r="3.5" fill="#2376b9"/>`:`<polyline fill="none" stroke="${spec.tone==='alt'?'#6a8bab':'#247bbd'}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" points="${g.map(p=>xy(p).map(n=>n.toFixed(1)).join(',')).join(' ')}"/>`).join('');
       const point=(p,label,dy)=>{const [x,y]=xy(p);return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="${label==='高'?'#c25448':'#238075'}" stroke="white" stroke-width="1.5"/><text x="${Math.min(Math.max(x,L+28),W-R-30).toFixed(1)}" y="${Math.max(12,Math.min(H-B-3,y+dy)).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="${label==='高'?'#a43f36':'#177165'}">${label} ${fmt(p.value,1)}</text>`};
-      const note=spec.key==='espoPremium'?'装船月切换处断线':spec.key==='globalOilStockChange'?'IEA 月度总油品库存变化，正值累库、负值去库':spec.key.startsWith('freight')?'独立航线 · 不与其他运费序列拼接':'按各自来源日期展示，不补造缺失值';
+      const note=spec.key==='espoPremium'?'装船月切换处断线':spec.key==='globalOilStockChange'?'IEA 月度总油品库存变化，正值累库、负值去库':spec.key==='usCrudeStocks'?'美国周度商业原油库存，不能替代全球库存':spec.key==='hormuzTankers'?'AIS 油轮艘次，不能换算为实际油流量':spec.key.startsWith('freight')?'独立航线 · 不与其他运费序列拼接':'按各自来源日期展示，不补造缺失值';
       return `<article class="chart-card"><h3>${spec.name}</h3><p>${note}</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${spec.name} 2026 年趋势，最高 ${fmt(high,1)}，最低 ${fmt(low,1)}"><line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="#b6c8d9"/><line x1="${L}" y1="${T}" x2="${L}" y2="${H-B}" stroke="#d5e1eb"/><text x="${L}" y="${H-8}" font-size="11" fill="#738aa0">2026-01</text><text x="${W-R}" y="${H-8}" font-size="11" fill="#738aa0" text-anchor="end">${clean(today().slice(0,7))}</text>${lines}${point(peak,'高',-10)}${peak!==trough?point(trough,'低',17):''}</svg><div class="chart-meta"><span>最高 <b>${fmt(high)}</b> · ${clean(peak.date)}</span><span>最低 <b>${fmt(low)}</b> · ${clean(trough.date)}</span><span>${s.length} 条观测</span></div></article>`;
     }
     function alerts(all){const espo=latest(series(all,'espoPremium')),ct1=latest(series(all,'freightChina')),alt=latest(series(all,'freightChinaAlt')),margin=latest(series(all,'asiaNetMargin')),stocks=latest(series(all,'globalOilStockChange'));const rows=[];
