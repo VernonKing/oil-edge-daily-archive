@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-10-05T00:42:20.788Z",
-  "items": [
-    {
-      "title": "Petroleum Marketing Monthly",
-      "url": "https://www.eia.gov/petroleum/marketing/monthly/",
-      "source": "EIA",
-      "recordedAt": "2026-10-01T05:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    }
-  ],
+  "updatedAt": "2026-10-05T12:36:17.785Z",
+  "items": [],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: fetch failed"
   ]
 }
