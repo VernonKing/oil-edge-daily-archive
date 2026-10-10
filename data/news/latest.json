@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-10-09T12:34:04.256Z",
-  "items": [
-    {
-      "title": "Crude oil prices and refinery margins generally increased throughout the third quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
-      "source": "EIA",
-      "recordedAt": "2026-10-05T14:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    }
-  ],
+  "updatedAt": "2026-10-10T00:44:08.129Z",
+  "items": [],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
