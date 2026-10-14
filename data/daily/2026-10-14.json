@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "fetchedAt": "2026-10-14T00:59:01.168Z",
+  "fetchedAt": "2026-10-14T12:50:39.485Z",
   "observations": [
     {
       "metric": "hormuzTankers",
@@ -3113,30 +3113,6 @@
       "sourceName": "CommodityScope"
     },
     {
-      "metric": "freightChinaAlt",
-      "date": "2026-09-01",
-      "value": 18.44,
-      "unit": "USD/bbl",
-      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
-      "sourceName": "CommodityScope",
-      "rawValue": 135.14,
-      "rawUnit": "USD/mt"
-    },
-    {
-      "metric": "freightKozminoChina",
-      "date": "2026-09-01",
-      "value": 2.88,
-      "unit": "USD/bbl",
-      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
-      "sourceName": "CommodityScope",
-      "rawValue": 21.25,
-      "rawUnit": "USD/mt"
-    },
-    {
       "metric": "hormuzTankers",
       "date": "2026-09-01",
       "value": 1,
@@ -4343,6 +4319,16 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "hormuzTankers",
+      "date": "2026-10-05",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
       "metric": "espoPremium",
       "date": "2026-10-06",
       "value": 12.5,
@@ -4375,6 +4361,16 @@
       "sourceName": "CommodityScope",
       "rawValue": 26,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-10-06",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
       "metric": "espoPremium",
@@ -4411,6 +4407,16 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "hormuzTankers",
+      "date": "2026-10-07",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
       "metric": "espoPremium",
       "date": "2026-10-08",
       "value": 13.1,
@@ -4443,6 +4449,16 @@
       "sourceName": "CommodityScope",
       "rawValue": 26,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-10-08",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
       "metric": "espoPremium",
@@ -4479,48 +4495,34 @@
       "rawUnit": "USD/mt"
     },
     {
-      "metric": "asiaNetMargin",
-      "date": "2026-10-12",
-      "value": 34.94,
-      "unit": "USD/bbl",
-      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2026-12 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
-      "quality": "estimated",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope component assessments",
-      "modelVersion": "espo-procurement-crack-v2",
-      "components": {
-        "gasoline": 143.07,
-        "gasoil": 168.19,
-        "espoFob": 113.12,
-        "freightKozminoChina": 3.38,
-        "espoLoadingMonth": "2026-12"
-      },
-      "componentSources": {
-        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
-        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
-        "espo": "https://commodityscope.com/prices/espo-crude-oil",
-        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
-      }
-    },
-    {
-      "metric": "brentIce",
-      "date": "2026-10-12",
-      "value": 106.65,
-      "unit": "USD/bbl",
-      "basis": "ICE Brent futures settlement; Dec 2026 contract; not EIA spot",
+      "metric": "hormuzTankers",
+      "date": "2026-10-09",
+      "value": 0,
+      "unit": "ships/day",
       "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/prices/brent-crude-oil",
-      "sourceName": "CommodityScope secondary quote"
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
-      "metric": "espoFob",
-      "date": "2026-10-12",
-      "value": 113.12,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino M1; 2026-12 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
+      "metric": "hormuzTankers",
+      "date": "2026-10-10",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-10-11",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
       "metric": "espoPremium",
@@ -4557,9 +4559,87 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "asiaNetMargin",
+      "date": "2026-10-13",
+      "value": 32.29,
+      "unit": "USD/bbl",
+      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2026-12 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
+      "quality": "estimated",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope component assessments",
+      "modelVersion": "espo-procurement-crack-v2",
+      "components": {
+        "gasoline": 138.98,
+        "gasoil": 171.04,
+        "espoFob": 114,
+        "freightKozminoChina": 3.38,
+        "espoLoadingMonth": "2026-12"
+      },
+      "componentSources": {
+        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
+        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
+        "espo": "https://commodityscope.com/prices/espo-crude-oil",
+        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
+      }
+    },
+    {
+      "metric": "brentIce",
+      "date": "2026-10-13",
+      "value": 105.69,
+      "unit": "USD/bbl",
+      "basis": "ICE Brent futures settlement; Dec 2026 contract; not EIA spot",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/prices/brent-crude-oil",
+      "sourceName": "CommodityScope secondary quote"
+    },
+    {
+      "metric": "espoFob",
+      "date": "2026-10-13",
+      "value": 114,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2026-12 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-10-13",
+      "value": 13.25,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-12 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-10-13",
+      "value": 34.32,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 251.56,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-10-13",
+      "value": 3.38,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 25,
+      "rawUnit": "USD/mt"
+    },
+    {
       "metric": "wtiNymex",
-      "date": "2026-10-12",
-      "value": 93.74,
+      "date": "2026-10-13",
+      "value": 94.14,
       "unit": "USD/bbl",
       "basis": "NYMEX WTI futures settlement; Nov 2026 contract; not EIA spot",
       "quality": "proxy",
@@ -4568,14 +4648,14 @@
     },
     {
       "metric": "freightChina",
-      "date": "2026-10-13",
-      "value": 36.03,
+      "date": "2026-10-14",
+      "value": 35.61,
       "unit": "USD/bbl",
       "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
       "quality": "proxy",
       "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
       "sourceName": "Shanghai Shipping Exchange",
-      "rawValue": 264.09,
+      "rawValue": 261,
       "rawUnit": "USD/t"
     }
   ],
