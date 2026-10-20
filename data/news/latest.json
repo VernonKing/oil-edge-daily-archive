@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-19T12:52:20.365Z",
+  "updatedAt": "2026-10-20T01:00:47.069Z",
   "items": [],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: fetch failed"
   ]
 }
