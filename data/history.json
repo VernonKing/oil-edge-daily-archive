@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T17:10:51.720Z",
+  "updatedAt": "2026-10-22T04:54:07.644Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -5770,6 +5770,16 @@
       "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
       "sourceUrl": "https://portwatch.imf.org/",
       "sourceName": "IMF PortWatch"
+    },
+    {
+      "metric": "usCrudeStocks",
+      "date": "2026-10-16",
+      "value": 412.517,
+      "unit": "million bbl",
+      "quality": "proxy",
+      "basis": "EIA U.S. commercial crude oil stocks, excluding SPR; weekly level; U.S. proxy, not global crude or total oil stocks",
+      "sourceUrl": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm",
+      "sourceName": "EIA WCESTUS1"
     },
     {
       "metric": "wtiNymex",
