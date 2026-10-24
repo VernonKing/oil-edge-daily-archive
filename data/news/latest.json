@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T17:05:19.462Z",
+  "updatedAt": "2026-10-24T04:41:18.685Z",
   "items": [
     {
       "title": "U.S. refineries have been running at very high rates in 2026",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+    "GDELT: HTTP 429"
   ]
 }
