@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "items": [],
+  "checks": [
+    {
+      "checkedAt": "2026-10-25T16:16:04.275Z",
+      "newItems": 1,
+      "errors": [
+        "GDELT: fetch failed"
+      ]
+    }
+  ]
+}
