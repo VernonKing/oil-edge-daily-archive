@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-10-26T04:52:12.682Z",
-  "items": [
-    {
-      "title": "U.S. refineries have been running at very high rates in 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
-      "source": "EIA",
-      "recordedAt": "2026-10-22T14:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    }
-  ],
+  "updatedAt": "2026-10-26T18:40:43.629Z",
+  "items": [],
   "errors": [
     "GDELT: HTTP 429"
   ]
