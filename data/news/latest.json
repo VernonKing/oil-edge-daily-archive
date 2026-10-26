@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:16:04.275Z",
+  "updatedAt": "2026-10-26T04:52:12.682Z",
   "items": [
     {
       "title": "U.S. refineries have been running at very high rates in 2026",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: fetch failed"
+    "GDELT: HTTP 429"
   ]
 }
