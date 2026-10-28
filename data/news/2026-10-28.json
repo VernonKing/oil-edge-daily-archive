@@ -8,6 +8,13 @@
       "errors": [
         "GDELT: HTTP 429"
       ]
+    },
+    {
+      "checkedAt": "2026-10-28T05:46:57.334Z",
+      "newItems": 0,
+      "errors": [
+        "GDELT: HTTP 429"
+      ]
     }
   ]
 }
