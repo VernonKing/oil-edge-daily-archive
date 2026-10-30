@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T18:27:29.675Z",
+  "updatedAt": "2026-10-30T05:53:47.781Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -6692,6 +6692,36 @@
       "sourceName": "CommodityScope secondary quote"
     },
     {
+      "metric": "brentIce",
+      "date": "2026-10-29",
+      "value": 114.88,
+      "unit": "USD/bbl",
+      "basis": "ICE Brent futures settlement; Dec 2026 contract; not EIA spot",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/prices/brent-crude-oil",
+      "sourceName": "CommodityScope secondary quote"
+    },
+    {
+      "metric": "espoFob",
+      "date": "2026-10-29",
+      "value": 119.18,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2026-12 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-10-29",
+      "value": 10.05,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-12 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
       "metric": "freightChina",
       "date": "2026-10-29",
       "value": 33.89,
@@ -6702,6 +6732,16 @@
       "sourceName": "Shanghai Shipping Exchange",
       "rawValue": 248.41,
       "rawUnit": "USD/t"
+    },
+    {
+      "metric": "wtiNymex",
+      "date": "2026-10-29",
+      "value": 102,
+      "unit": "USD/bbl",
+      "basis": "NYMEX WTI futures settlement; Dec 2026 contract; not EIA spot",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/prices/wti-crude-oil",
+      "sourceName": "CommodityScope secondary quote"
     }
   ]
 }
