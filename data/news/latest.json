@@ -1,6 +1,15 @@
 {
-  "updatedAt": "2026-10-30T05:53:47.781Z",
-  "items": [],
+  "updatedAt": "2026-10-30T17:59:31.623Z",
+  "items": [
+    {
+      "title": "Petroleum Supply Monthly",
+      "url": "https://www.eia.gov/petroleum/supply/monthly/",
+      "source": "EIA",
+      "recordedAt": "2026-10-30T05:00:00.000Z",
+      "timeBasis": "EIA 发布",
+      "kind": "news-lead"
+    }
+  ],
   "errors": [
     "GDELT: HTTP 429"
   ]
