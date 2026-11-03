@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-03T06:52:48.692Z",
+  "updatedAt": "2026-11-03T19:28:56.125Z",
   "items": [
+    {
+      "title": "Global refinery inputs fell sharply in the second quarter of 2026 before modest recovery",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68404",
+      "source": "EIA",
+      "recordedAt": "2026-11-03T14:00:00.000Z",
+      "timeBasis": "EIA 发布",
+      "kind": "news-lead"
+    },
     {
       "title": "Petroleum Marketing Monthly",
       "url": "https://www.eia.gov/petroleum/marketing/monthly/",
@@ -11,6 +19,6 @@
     }
   ],
   "errors": [
-    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+    "GDELT: HTTP 429"
   ]
 }

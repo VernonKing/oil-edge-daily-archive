@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T06:52:48.692Z",
+  "updatedAt": "2026-11-03T19:28:56.125Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -6892,6 +6892,30 @@
       "sourceName": "CommodityScope secondary quote"
     },
     {
+      "metric": "asiaNetMargin",
+      "date": "2026-11-02",
+      "value": 19.23,
+      "unit": "USD/bbl",
+      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2027-01 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
+      "quality": "estimated",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope component assessments",
+      "modelVersion": "espo-procurement-crack-v2",
+      "components": {
+        "gasoline": 119.5,
+        "gasoil": 167.04,
+        "espoFob": 112.2,
+        "freightKozminoChina": 3.92,
+        "espoLoadingMonth": "2027-01"
+      },
+      "componentSources": {
+        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
+        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
+        "espo": "https://commodityscope.com/prices/espo-crude-oil",
+        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
+      }
+    },
+    {
       "metric": "brentIce",
       "date": "2026-11-02",
       "value": 104.77,
@@ -6934,6 +6958,30 @@
       "rawUnit": "USD/t"
     },
     {
+      "metric": "freightChinaAlt",
+      "date": "2026-11-02",
+      "value": 34.46,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 252.6,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-11-02",
+      "value": 3.92,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 29,
+      "rawUnit": "USD/mt"
+    },
+    {
       "metric": "wtiNymex",
       "date": "2026-11-02",
       "value": 96.46,
@@ -6942,6 +6990,18 @@
       "quality": "proxy",
       "sourceUrl": "https://commodityscope.com/prices/wti-crude-oil",
       "sourceName": "CommodityScope secondary quote"
+    },
+    {
+      "metric": "freightChina",
+      "date": "2026-11-03",
+      "value": 34.57,
+      "unit": "USD/bbl",
+      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
+      "sourceName": "Shanghai Shipping Exchange",
+      "rawValue": 253.41,
+      "rawUnit": "USD/t"
     }
   ]
 }
