@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "fetchedAt": "2026-11-03T19:28:56.125Z",
+  "fetchedAt": "2026-11-04T06:30:09.132Z",
   "observations": [
     {
       "metric": "usCrudeStocks",
@@ -1889,50 +1889,6 @@
       "rawUnit": "USD/mt"
     },
     {
-      "metric": "asiaNetMargin",
-      "date": "2026-11-02",
-      "value": 19.23,
-      "unit": "USD/bbl",
-      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2027-01 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
-      "quality": "estimated",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope component assessments",
-      "modelVersion": "espo-procurement-crack-v2",
-      "components": {
-        "gasoline": 119.5,
-        "gasoil": 167.04,
-        "espoFob": 112.2,
-        "freightKozminoChina": 3.92,
-        "espoLoadingMonth": "2027-01"
-      },
-      "componentSources": {
-        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
-        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
-        "espo": "https://commodityscope.com/prices/espo-crude-oil",
-        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
-      }
-    },
-    {
-      "metric": "brentIce",
-      "date": "2026-11-02",
-      "value": 104.77,
-      "unit": "USD/bbl",
-      "basis": "ICE Brent futures settlement; Jan 2027 contract; not EIA spot",
-      "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/prices/brent-crude-oil",
-      "sourceName": "CommodityScope secondary quote"
-    },
-    {
-      "metric": "espoFob",
-      "date": "2026-11-02",
-      "value": 112.2,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
-    },
-    {
       "metric": "espoPremium",
       "date": "2026-11-02",
       "value": 7.2,
@@ -1967,14 +1923,34 @@
       "rawUnit": "USD/mt"
     },
     {
-      "metric": "wtiNymex",
-      "date": "2026-11-02",
-      "value": 96.46,
+      "metric": "brentIce",
+      "date": "2026-11-03",
+      "value": 103.6,
       "unit": "USD/bbl",
-      "basis": "NYMEX WTI futures settlement; Dec 2026 contract; not EIA spot",
+      "basis": "ICE Brent futures settlement; Jan 2027 contract; not EIA spot",
       "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/prices/wti-crude-oil",
+      "sourceUrl": "https://commodityscope.com/prices/brent-crude-oil",
       "sourceName": "CommodityScope secondary quote"
+    },
+    {
+      "metric": "espoFob",
+      "date": "2026-11-03",
+      "value": 109.79,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-11-03",
+      "value": 8.55,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
     },
     {
       "metric": "freightChina",
@@ -1987,9 +1963,23 @@
       "sourceName": "Shanghai Shipping Exchange",
       "rawValue": 253.41,
       "rawUnit": "USD/t"
+    },
+    {
+      "metric": "wtiNymex",
+      "date": "2026-11-03",
+      "value": 96.09,
+      "unit": "USD/bbl",
+      "basis": "NYMEX WTI futures settlement; Dec 2026 contract; not EIA spot",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/prices/wti-crude-oil",
+      "sourceName": "CommodityScope secondary quote"
     }
   ],
   "errors": [
+    {
+      "source": "Asia margin",
+      "message": "No basis-matched value found"
+    },
     {
       "source": "IEA 2026-11",
       "message": "HTTP 403"
