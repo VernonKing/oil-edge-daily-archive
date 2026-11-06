@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-06T06:53:18.972Z",
+  "updatedAt": "2026-11-06T19:22:59.515Z",
   "items": [
+    {
+      "title": "U.S. crude oil imports from Venezuela in July were highest since 2017",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68425",
+      "source": "EIA",
+      "recordedAt": "2026-11-06T14:00:00.000Z",
+      "timeBasis": "EIA 发布",
+      "kind": "news-lead"
+    },
     {
       "title": "Refineries have shifted production away from gasoline to middle distillates",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68424",
@@ -19,6 +27,6 @@
     }
   ],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
