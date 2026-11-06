@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T19:55:52.330Z",
+  "updatedAt": "2026-11-06T06:53:18.972Z",
   "items": [
     {
       "title": "Refineries have shifted production away from gasoline to middle distillates",
@@ -14,14 +14,6 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68404",
       "source": "EIA",
       "recordedAt": "2026-11-03T14:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    },
-    {
-      "title": "Petroleum Marketing Monthly",
-      "url": "https://www.eia.gov/petroleum/marketing/monthly/",
-      "source": "EIA",
-      "recordedAt": "2026-11-02T05:00:00.000Z",
       "timeBasis": "EIA 发布",
       "kind": "news-lead"
     }
