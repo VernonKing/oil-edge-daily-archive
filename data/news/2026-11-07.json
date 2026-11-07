@@ -8,6 +8,13 @@
       "errors": [
         "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
       ]
+    },
+    {
+      "checkedAt": "2026-11-07T06:03:32.609Z",
+      "newItems": 3,
+      "errors": [
+        "GDELT: HTTP 429"
+      ]
     }
   ]
 }
