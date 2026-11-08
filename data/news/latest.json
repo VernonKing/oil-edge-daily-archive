@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T17:44:29.944Z",
+  "updatedAt": "2026-11-08T06:07:40.415Z",
   "items": [
     {
       "title": "U.S. crude oil imports from Venezuela in July were highest since 2017",
@@ -19,6 +19,6 @@
     }
   ],
   "errors": [
-    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+    "GDELT: HTTP 429"
   ]
 }
