@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "fetchedAt": "2026-11-10T19:42:23.208Z",
+  "fetchedAt": "2026-11-11T06:30:51.587Z",
   "observations": [
     {
       "metric": "hormuzTankers",
@@ -3093,16 +3093,6 @@
       "sourceName": "IMF PortWatch"
     },
     {
-      "metric": "espoPremium",
-      "date": "2026-09-28",
-      "value": 10,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-11 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
-    },
-    {
       "metric": "freightChinaAlt",
       "date": "2026-09-28",
       "value": 32.62,
@@ -4519,40 +4509,6 @@
       "sourceName": "IMF PortWatch"
     },
     {
-      "metric": "asiaNetMargin",
-      "date": "2026-11-06",
-      "value": 15.5,
-      "unit": "USD/bbl",
-      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2027-01 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
-      "quality": "estimated",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope component assessments",
-      "modelVersion": "espo-procurement-crack-v2",
-      "components": {
-        "gasoline": 109.88,
-        "gasoil": 161.83,
-        "espoFob": 108.52,
-        "freightKozminoChina": 3.18,
-        "espoLoadingMonth": "2027-01"
-      },
-      "componentSources": {
-        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
-        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
-        "espo": "https://commodityscope.com/prices/espo-crude-oil",
-        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
-      }
-    },
-    {
-      "metric": "espoFob",
-      "date": "2026-11-06",
-      "value": 108.52,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
-    },
-    {
       "metric": "espoPremium",
       "date": "2026-11-06",
       "value": 13.95,
@@ -4617,6 +4573,26 @@
       "sourceName": "IMF PortWatch"
     },
     {
+      "metric": "espoFob",
+      "date": "2026-11-10",
+      "value": 101.67,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-11-10",
+      "value": 14.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
       "metric": "freightChina",
       "date": "2026-11-10",
       "value": 31.06,
@@ -4636,6 +4612,10 @@
     },
     {
       "source": "NYMEX WTI futures reference",
+      "message": "No basis-matched value found"
+    },
+    {
+      "source": "Asia margin",
       "message": "No basis-matched value found"
     },
     {

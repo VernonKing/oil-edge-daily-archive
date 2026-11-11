@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T19:42:23.208Z",
+  "updatedAt": "2026-11-11T06:30:51.587Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -7512,6 +7512,26 @@
       "sourceName": "Shanghai Shipping Exchange",
       "rawValue": 238.87,
       "rawUnit": "USD/t"
+    },
+    {
+      "metric": "espoFob",
+      "date": "2026-11-10",
+      "value": 101.67,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-11-10",
+      "value": 14.1,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
     },
     {
       "metric": "freightChina",
