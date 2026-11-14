@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T06:29:46.393Z",
+  "updatedAt": "2026-11-14T17:59:08.255Z",
   "items": [
     {
       "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: fetch failed"
+    "GDELT: HTTP 429"
   ]
 }
