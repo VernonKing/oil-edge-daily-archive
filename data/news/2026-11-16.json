@@ -8,6 +8,13 @@
       "errors": [
         "GDELT: fetch failed"
       ]
+    },
+    {
+      "checkedAt": "2026-11-16T06:36:32.830Z",
+      "newItems": 1,
+      "errors": [
+        "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T18:49:48.124Z",
+  "updatedAt": "2026-11-16T06:36:32.830Z",
   "items": [
     {
       "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: fetch failed"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
