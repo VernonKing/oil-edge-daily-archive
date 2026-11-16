@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-11-16T06:36:32.830Z",
-  "items": [
-    {
-      "title": "EIA forecasts Alaskan crude oil production to grow 13% in 2027",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68444",
-      "source": "EIA",
-      "recordedAt": "2026-11-12T14:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    }
-  ],
+  "updatedAt": "2026-11-16T21:59:35.017Z",
+  "items": [],
   "errors": [
-    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+    "GDELT: HTTP 429"
   ]
 }

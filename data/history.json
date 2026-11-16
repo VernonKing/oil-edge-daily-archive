@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T06:36:32.830Z",
+  "updatedAt": "2026-11-16T21:59:35.017Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -7842,6 +7842,18 @@
       "sourceName": "CommodityScope",
       "rawValue": 22,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightChina",
+      "date": "2026-11-16",
+      "value": 27.67,
+      "unit": "USD/bbl",
+      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
+      "sourceName": "Shanghai Shipping Exchange",
+      "rawValue": 202.84,
+      "rawUnit": "USD/t"
     }
   ]
 }
