@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-18",
+  "items": [],
+  "checks": [
+    {
+      "checkedAt": "2026-11-17T20:53:22.627Z",
+      "newItems": 0,
+      "errors": [
+        "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+      ]
+    }
+  ]
+}
