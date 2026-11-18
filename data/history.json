@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T07:34:33.596Z",
+  "updatedAt": "2026-11-18T20:29:00.405Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -7894,6 +7894,16 @@
       "sourceName": "IMF PortWatch"
     },
     {
+      "metric": "usCrudeStocks",
+      "date": "2026-11-13",
+      "value": 417.797,
+      "unit": "million bbl",
+      "quality": "proxy",
+      "basis": "EIA U.S. commercial crude oil stocks, excluding SPR; weekly level; U.S. proxy, not global crude or total oil stocks",
+      "sourceUrl": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm",
+      "sourceName": "EIA WCESTUS1"
+    },
+    {
       "metric": "hormuzTankers",
       "date": "2026-11-14",
       "value": 0,
@@ -8072,6 +8082,18 @@
       "sourceName": "CommodityScope",
       "rawValue": 21.75,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightChina",
+      "date": "2026-11-18",
+      "value": 27.84,
+      "unit": "USD/bbl",
+      "basis": "CT1 Ras Tanura–Ningbo VLCC 270kt; USD/t ÷ approximate 7.33 bbl/t; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://www.sse.net.cn/index/singleIndex?indexType=ctfi",
+      "sourceName": "Shanghai Shipping Exchange",
+      "rawValue": 204.07,
+      "rawUnit": "USD/t"
     }
   ]
 }
