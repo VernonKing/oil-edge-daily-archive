@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "fetchedAt": "2026-11-19T20:33:49.545Z",
+  "fetchedAt": "2026-11-20T07:21:38.212Z",
   "observations": [
     {
       "metric": "hormuzTankers",
@@ -3193,40 +3193,6 @@
       "sourceName": "IMF PortWatch"
     },
     {
-      "metric": "espoPremium",
-      "date": "2026-10-07",
-      "value": 12.25,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2026-12 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
-    },
-    {
-      "metric": "freightChinaAlt",
-      "date": "2026-10-07",
-      "value": 34.74,
-      "unit": "USD/bbl",
-      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
-      "sourceName": "CommodityScope",
-      "rawValue": 254.68,
-      "rawUnit": "USD/mt"
-    },
-    {
-      "metric": "freightKozminoChina",
-      "date": "2026-10-07",
-      "value": 3.52,
-      "unit": "USD/bbl",
-      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
-      "quality": "proxy",
-      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
-      "sourceName": "CommodityScope",
-      "rawValue": 26,
-      "rawUnit": "USD/mt"
-    },
-    {
       "metric": "hormuzTankers",
       "date": "2026-10-07",
       "value": 1,
@@ -4639,40 +4605,6 @@
       "rawUnit": "USD/mt"
     },
     {
-      "metric": "asiaNetMargin",
-      "date": "2026-11-18",
-      "value": 12.01,
-      "unit": "USD/bbl",
-      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2027-01 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
-      "quality": "estimated",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope component assessments",
-      "modelVersion": "espo-procurement-crack-v2",
-      "components": {
-        "gasoline": 95.38,
-        "gasoil": 143.13,
-        "espoFob": 96.35,
-        "freightKozminoChina": 2.94,
-        "espoLoadingMonth": "2027-01"
-      },
-      "componentSources": {
-        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
-        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
-        "espo": "https://commodityscope.com/prices/espo-crude-oil",
-        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
-      }
-    },
-    {
-      "metric": "espoFob",
-      "date": "2026-11-18",
-      "value": 96.35,
-      "unit": "USD/bbl",
-      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
-      "quality": "observed",
-      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
-      "sourceName": "CommodityScope"
-    },
-    {
       "metric": "espoPremium",
       "date": "2026-11-18",
       "value": 8.45,
@@ -4707,6 +4639,50 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "asiaNetMargin",
+      "date": "2026-11-19",
+      "value": 11.4,
+      "unit": "USD/bbl",
+      "basis": "Singapore FOB gasoline 92 and gasoil 10ppm 3-2-1 product netback − ESPO FOB Kozmino M1 (2027-01 loading) − Kozmino–North China Aframax freight; before processing costs, taxes and product logistics",
+      "quality": "estimated",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope component assessments",
+      "modelVersion": "espo-procurement-crack-v2",
+      "components": {
+        "gasoline": 94.97,
+        "gasoil": 139.52,
+        "espoFob": 95.51,
+        "freightKozminoChina": 2.91,
+        "espoLoadingMonth": "2027-01"
+      },
+      "componentSources": {
+        "gasoline": "https://commodityscope.com/prices/singapore-gasoline-92",
+        "gasoil": "https://commodityscope.com/prices/singapore-10ppm-gasoil",
+        "espo": "https://commodityscope.com/prices/espo-crude-oil",
+        "freight": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china"
+      }
+    },
+    {
+      "metric": "espoFob",
+      "date": "2026-11-19",
+      "value": 95.51,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino M1; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
+      "metric": "espoPremium",
+      "date": "2026-11-19",
+      "value": 7.5,
+      "unit": "USD/bbl",
+      "basis": "ESPO FOB Kozmino vs Dubai swap M2; 2027-01 loading",
+      "quality": "observed",
+      "sourceUrl": "https://commodityscope.com/prices/espo-crude-oil",
+      "sourceName": "CommodityScope"
+    },
+    {
       "metric": "freightChina",
       "date": "2026-11-19",
       "value": 27.68,
@@ -4717,6 +4693,30 @@
       "sourceName": "Shanghai Shipping Exchange",
       "rawValue": 202.89,
       "rawUnit": "USD/t"
+    },
+    {
+      "metric": "freightChinaAlt",
+      "date": "2026-11-19",
+      "value": 28.08,
+      "unit": "USD/bbl",
+      "basis": "Arabian Gulf to China VLCC 270kt indicative; USD/mt ÷ approx 7.33 bbl/t; not CT1 named ports; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/arabian-gulf-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 205.82,
+      "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "freightKozminoChina",
+      "date": "2026-11-19",
+      "value": 2.91,
+      "unit": "USD/bbl",
+      "basis": "Kozmino–North China Aframax 100kt indicative; USD/mt ÷ 7.39 bbl/mt; excludes insurance",
+      "quality": "proxy",
+      "sourceUrl": "https://commodityscope.com/freight/tankers/dirty/kozmino-north-china",
+      "sourceName": "CommodityScope",
+      "rawValue": 21.5,
+      "rawUnit": "USD/mt"
     }
   ],
   "errors": [
