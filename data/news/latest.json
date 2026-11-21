@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T07:15:01.438Z",
+  "updatedAt": "2026-11-21T19:14:01.752Z",
   "items": [
     {
       "title": "Oil flows through Middle East chokepoints increased in the third quarter",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: fetch failed"
+    "GDELT: HTTP 429"
   ]
 }
