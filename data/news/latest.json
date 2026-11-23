@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-11-23T07:44:45.946Z",
-  "items": [
-    {
-      "title": "Oil flows through Middle East chokepoints increased in the third quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=",
-      "source": "EIA",
-      "recordedAt": "2026-11-19T14:00:00.000Z",
-      "timeBasis": "EIA 发布",
-      "kind": "news-lead"
-    }
-  ],
+  "updatedAt": "2026-11-23T23:51:38.231Z",
+  "items": [],
   "errors": [
-    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
+    "GDELT: HTTP 429"
   ]
 }
