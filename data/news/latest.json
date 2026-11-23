@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T19:36:40.883Z",
+  "updatedAt": "2026-11-23T07:44:45.946Z",
   "items": [
     {
       "title": "Oil flows through Middle East chokepoints increased in the third quarter",
@@ -11,6 +11,6 @@
     }
   ],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
