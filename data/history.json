@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T09:58:12.511Z",
+  "updatedAt": "2026-11-24T22:24:56.659Z",
   "observations": [
     {
       "metric": "globalOilStockChange",
@@ -8004,6 +8004,16 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "hormuzTankers",
+      "date": "2026-11-16",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
       "metric": "asiaNetMargin",
       "date": "2026-11-17",
       "value": 10.51,
@@ -8082,6 +8092,16 @@
       "sourceName": "CommodityScope",
       "rawValue": 21.75,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-11-17",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
       "metric": "asiaNetMargin",
@@ -8164,6 +8184,16 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "hormuzTankers",
+      "date": "2026-11-18",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
       "metric": "asiaNetMargin",
       "date": "2026-11-19",
       "value": 11.4,
@@ -8244,6 +8274,16 @@
       "rawUnit": "USD/mt"
     },
     {
+      "metric": "hormuzTankers",
+      "date": "2026-11-19",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
       "metric": "asiaNetMargin",
       "date": "2026-11-20",
       "value": 11.75,
@@ -8322,6 +8362,36 @@
       "sourceName": "CommodityScope",
       "rawValue": 21.5,
       "rawUnit": "USD/mt"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-11-20",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-11-21",
+      "value": 1,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
+    },
+    {
+      "metric": "hormuzTankers",
+      "date": "2026-11-22",
+      "value": 0,
+      "unit": "ships/day",
+      "quality": "proxy",
+      "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
+      "sourceUrl": "https://portwatch.imf.org/",
+      "sourceName": "IMF PortWatch"
     },
     {
       "metric": "freightChina",
