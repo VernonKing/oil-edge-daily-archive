@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-23T23:51:38.231Z",
+  "updatedAt": "2026-11-24T09:58:12.511Z",
   "items": [],
   "errors": [
-    "GDELT: HTTP 429"
+    "GDELT: Unexpected token 'T', \"The specif\"... is not valid JSON"
   ]
 }
