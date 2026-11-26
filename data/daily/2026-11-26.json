@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "fetchedAt": "2026-11-25T21:40:08.513Z",
+  "fetchedAt": "2026-11-26T08:26:13.546Z",
   "observations": [
     {
       "metric": "hormuzTankers",
@@ -3701,16 +3701,6 @@
       "basis": "IMF PortWatch AIS tanker transits at Hormuz; vessel count, not oil flow or cargo volume",
       "sourceUrl": "https://portwatch.imf.org/",
       "sourceName": "IMF PortWatch"
-    },
-    {
-      "metric": "usCrudeStocks",
-      "date": "2026-11-20",
-      "value": 418.906,
-      "unit": "million bbl",
-      "quality": "proxy",
-      "basis": "EIA U.S. commercial crude oil stocks, excluding SPR; weekly level; U.S. proxy, not global crude or total oil stocks",
-      "sourceUrl": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm",
-      "sourceName": "EIA WCESTUS1"
     },
     {
       "metric": "hormuzTankers",

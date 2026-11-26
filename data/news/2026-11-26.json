@@ -8,6 +8,13 @@
       "errors": [
         "GDELT: fetch failed"
       ]
+    },
+    {
+      "checkedAt": "2026-11-26T08:26:13.546Z",
+      "newItems": 0,
+      "errors": [
+        "GDELT: fetch failed"
+      ]
     }
   ]
 }
